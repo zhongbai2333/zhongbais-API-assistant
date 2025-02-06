@@ -14,7 +14,7 @@ class CoreControlInterface:
         config_path: str = None,
     ) -> dict:
         """
-        获取配置文件
+        获取配置文件，如果配置文件不存在或为空则不会写入到配置文件中，请使用`save_config`初始化
 
         Args:
             config_path (str): 配置文件目录, 默认为插件或服务器默认 config 路径
