@@ -42,3 +42,10 @@ class zbDataAPI(object):
             list: 玩家列表
         """
         pass
+
+    @staticmethod
+    def refresh_getpos() -> None:
+        """
+        手动刷新player_info
+        """
+        pass
