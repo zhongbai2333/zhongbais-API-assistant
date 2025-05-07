@@ -12,3 +12,5 @@ This is an API assistant collecting repository.
 - [ConnectCore](https://github.com/zhongbai2333/ConnectCore)
 
 - [AutoMsgTitle](https://github.com/zhongbai2333/AutoMsgTitle)
+
+- [zhongbaisDataAPI](https://github.com/zhongbai2333/zhongbais-Data-API)
