@@ -8,14 +8,11 @@
 
 class zbDataAPI(object):
     @staticmethod
-    def register_player_info_callback(
-        func,
-        list = []
-    ) -> None:
+    def register_player_info_callback(func, list=[]) -> None:
         """
-        注册回调函数，在 player_info 发生变化时触发
+        注册回调函数，按照Config中的刷新时间配置，触发回调
 
-        Register a callback, triggered when player_info changes
+        Register callback function, configure according to the refresh time in Config, and trigger callback
 
         Args:
             func (callable): 回调函数，接收参数 (name: str, info: dict)
@@ -51,9 +48,9 @@ class zbDataAPI(object):
         Register a callback, triggered when the player list changes
 
         Args:
-            func (callable): 回调函数，接收参数 (player_list: list)
+            func (callable): 回调函数，接收参数 (player_name: str, player_list: list)
 
-                             The callback function, receives (player_list: list)
+                             The callback function, receives (player_name: str, player_list: list)
 
         Returns:
             None
