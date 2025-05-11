@@ -1,3 +1,11 @@
+# ==============================================================================
+# This is an API assistant.
+# Please go to the complete project https://github.com/zhongbai2333/zhongbais-Data-API
+# 这是个API助理，
+# 完整项目请前往 https://github.com/zhongbai2333/zhongbais-Data-API
+# ==============================================================================
+
+
 class zbDataAPI(object):
     @staticmethod
     def register_player_info_callback(
