@@ -1,19 +1,22 @@
 class zbDataAPI(object):
     @staticmethod
-    def register_player_info_callback(list, func) -> None:
+    def register_player_info_callback(
+        func,
+        list = []
+    ) -> None:
         """
         注册回调函数，在 player_info 发生变化时触发
 
         Register a callback, triggered when player_info changes
 
         Args:
-            list (list): 需要注册的 NBT 名称列表
-
-                         NBT names to register
-
             func (callable): 回调函数，接收参数 (name: str, info: dict)
 
                              The callback function, receives (name: str, info: dict)
+
+            list (list): 需要监听的玩家列表，默认为空，表示监听所有NBT
+
+                         The list of players to listen to, default is empty, meaning listen to all NBT
 
         Returns:
             None
